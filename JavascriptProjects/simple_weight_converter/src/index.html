@@ -9,19 +9,59 @@
     <title>Simple Weight Converter</title>
 </head>
 
-<body>
-    <section class="container-md bg-primary-subtle rounded-3 mt-5 mb-5">
-        <div class="container-sm bg-primary d-grid rounded-4 justify-content-center mt-3 mb-3">
-            <div class="container-smrow mt-3 mb-3">
-                <h1 class="display-1 fw-semibold text-white">Weight Converter</h1>
+<body class="container-fluid bg-primary-subtle">
+    <section class="container-md">
+        <div class="container-sm w-75 bg-secondary d-grid justify-content-center mt-5 rounded-3">
+            <div class="row mt-5 mb-5">
+                <h1 class="fw-semibold display-2 text-white">Weight Converter</h1>
             </div>
-            <div class="row mt-3 mb-3">
-                <label for="numberPounds"></label>
-                <input type="number" class="form-control w-100" id="numberPounds" placeholder="Enter Pounds">
+            <div class=" row mt-3 mb-5 h-50">
+                <input class="form-control" type="number" id="numberPounds" placeholder="Enter Pounds">
             </div>
-
+            <div class="row mt-3">
+                <div class="row mt-1 mb-5">
+                    <ul class="list-inline d-flex flex-row justify-content-around column-gap-3">
+                        <li class="inline-item">
+                            <div class="card text-bg-primary border border-light">
+                                <div class="card-header">
+                                    Pounds to Grams
+                                </div>
+                                <div class="card-body d-flex flex-row gap-2">
+                                    <h5 class="card-title">
+                                        Grams =
+                                    </h5>
+                                    <div class="card-text" id="gramsOutput"> 0 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="card text-bg-danger border border-light">
+                                <div class="card-header">
+                                    Pounds to Kilograms
+                                </div>
+                                <div class="card-body d-flex flex-row gap-2">
+                                    <h5 class="card-title"> Kilograms =</h5>
+                                    <div class="card-text" id="kilogramsOutput"> 0 </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="card text-bg-warning border border-light">
+                                <div class="card-header">
+                                    Pound to Ounces
+                                </div>
+                                <div class="card-body d-flex flex-row gap-2">
+                                    <h5 class="card-title">Ounces =</h5>
+                                    <div class="card-text" id="ouncesOutput"> 0 </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+    <script src="./script_weight_converter.js"></script>
 </body>
 
 </html>
